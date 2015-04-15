@@ -497,7 +497,7 @@ usersFromStanza = (stanza) ->
   stanza.getChild("query").getChildren("item").map (el) ->
     jid: el.attrs.jid
     name: el.attrs.name
-    email: el.attrs.email
+    email_address: el.attrs.email
     # Name used to @mention this user
     mention_name: el.attrs.mention_name
 
